@@ -1,1 +1,69 @@
 /* Her kommer CSS*/
+
+ *{
+    font-family: "Sour Gummy", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+   --KnappeGreen: #DEE6D6;
+   --PrimePurple: #817696;
+   --BGGreen: #E3EDD9;
+   --BGBaige: #F9F6EA;
+   --BGPurple: #F0E9F9;
+
+}
+.navConteiner{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    padding-right: 4rem;
+    background: var(--BGBaige);
+}
+.navConteiner li{
+    list-style-type:none;
+    padding: 1.3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    align-items: end;
+    background-color: var(--KnappeGreen);
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Forside -  intro */
+.infoSektion h1 {
+    color: var(--PrimePurple);
+}
+.infoSektion p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+}
+.introSektion {
+    background: var(--BGBaige);
+    padding-top: 30px;
+}
+
+.Introikoner{
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    gap: 2rem;
+}
+.Introikoner img{
+    width: 100%;
+    height: 40px;
+    object-fit: contain;
+}
