@@ -44,6 +44,7 @@ font-family: "Fascinate", system-ui;
 }
 
 /* Forside -  intro */
+
 .infoSektion h1 {
     color: var(--PrimePurple);
 }
@@ -77,4 +78,10 @@ font-family: "Fascinate", system-ui;
     border-bottom: solid 80px white;
     border-radius: 30px;
 
+}
+
+/*Kompetance sektionen */
+
+.kompetanceSektion{
+    background: var(--BGPurple);
 }
