@@ -9,6 +9,10 @@
             "wdth" 100;
             margin: 0 auto;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
 h1, h2, h3, h4, h5, h6 {
 font-family: "Fascinate", system-ui;
@@ -32,6 +36,7 @@ font-family: "Fascinate", system-ui;
     padding-right: 4rem;
     background: var(--BGBaige);
 }
+
 .navConteiner li{
     list-style-type:none;
     padding: 1.3rem;
@@ -47,6 +52,10 @@ font-family: "Fascinate", system-ui;
 
 .infoSektion h1 {
     color: var(--PrimePurple);
+*}
+.introSektion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .infoSektion p {
     font-size: 1.2rem;
@@ -70,18 +79,44 @@ font-family: "Fascinate", system-ui;
     height: 40px;
     object-fit: contain;
 }
-.BilledeCard img{
-    width: 400px;
-    height: 450px;
-    object-fit: cover;
-    border: solid 40px white;
-    border-bottom: solid 80px white;
-    border-radius: 30px;
-
+.ProfileCard{
+    background: #fffef8;
+        border: 3px solid #d9d8c8;
+        border-radius: 12px;
+        padding: 5px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: rotate(5deg);
+        text-align: center;
 }
+.CardBillede{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border: solid 10px white;
+    border-bottom: solid 10px white;
+}
+
+
 
 /*Kompetance sektionen */
 
 .kompetanceSektion{
     background: var(--BGPurple);
+    border-top: solid 20px white;
+}
+.KSlogoer{
+    display: flex;
+}
+.mmdIkoner,
+.gdtIkoner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.mmdIkoner img, .gdtIkoner img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
