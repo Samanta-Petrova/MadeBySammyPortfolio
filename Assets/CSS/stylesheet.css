@@ -8,6 +8,8 @@
         font-variation-settings:
             "wdth" 100;
             margin: 0 auto;
+            padding: 0; 
+            line-height: 1.5rem;
 }
 a {
     text-decoration: none;
@@ -48,24 +50,47 @@ font-family: "Fascinate", system-ui;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.navConteinerUBG {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    gap: 2rem;
+    padding-right: 4rem;
+}
+
+.navConteinerUBG li {
+    list-style-type: none;
+    padding: 1.3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    align-items: end;
+    background-color: var(--KnappeGreen);
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 /* Forside -  intro */
 
 .infoSektion h1 {
     color: var(--PrimePurple);
-*}
+    line-height: 2.5rem;
+}
 .introSektion{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-left: 40px;
 }
 .infoSektion p {
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding-right: 10rem;
     padding-bottom: 2rem;
+    line-break: 65ch;
 }
 .introSektion {
     background: var(--BGBaige);
     padding-top: 30px;
+    size: 1.5rem;
 }
 
 .Introikoner{
@@ -115,8 +140,96 @@ font-family: "Fascinate", system-ui;
     gap: 1rem;
     
 }
-.mmdIkoner img, .gdtIkoner img {
+.mmdIkoner img{
     width: 100px;
     height: 100px;
     object-fit: contain;
+}
+.gdtIkoner img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+/* OmMig side */
+.OmMigintro{
+    background: var(--BGPurple);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+     
+}
+
+
+
+/*Flip cards*/
+.portfolioSektion {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: var(--BGGreen);
+    gap: 3rem;
+}
+
+
+.flip-card {
+    width: 400px;
+    height: 550px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Flip-effekten på hover */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front og bagside */
+.flip-card-front,
+.flip-card-bagside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Forsiden */
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+}
+
+.flip-card-front img {
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    object-fit: cover;
+    padding-bottom: 10px
+}
+.flip-card-front h2 {
+    color: var(--PrimePurple);
+    padding-bottom: 30px;
+}
+/* Bagsiden */
+.flip-card-bagside {
+    background: white; 
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 15px;
 }
