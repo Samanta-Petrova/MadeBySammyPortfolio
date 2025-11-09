@@ -9,7 +9,7 @@
             "wdth" 100;
             margin: 0 auto;
             padding: 0; 
-            line-height: 1.5rem;
+            line-height: 2rem;
 }
 a {
     text-decoration: none;
@@ -28,8 +28,13 @@ font-family: "Fascinate", system-ui;
    --BGGreen: #E3EDD9;
    --BGBaige: #F9F6EA;
    --BGPurple: #F0E9F9;
+   --NormPadding: 20px;
+   --MediumPaddingh: 30px;
+   --BiggerPadding: 40px;
 
 }
+
+/* Nav */
 .navConteiner{
     display: flex;
     justify-content: end;
@@ -68,8 +73,13 @@ font-family: "Fascinate", system-ui;
     border-radius: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/**/
+/**/
 
 /* Forside -  intro */
+.backgroundColorBeige{
+    background: var(--BGBaige);
+}
 
 .infoSektion h1 {
     color: var(--PrimePurple);
@@ -83,12 +93,11 @@ font-family: "Fascinate", system-ui;
 .infoSektion p {
     font-size: 1.2rem;
     line-height: 1.5rem;
-    padding-right: 10rem;
+    padding-right: 2rem;
     padding-bottom: 2rem;
     line-break: 65ch;
 }
 .introSektion {
-    background: var(--BGBaige);
     padding-top: 30px;
     size: 1.5rem;
 }
@@ -96,7 +105,7 @@ font-family: "Fascinate", system-ui;
 .Introikoner{
     display: flex;
     justify-content: left;
-    padding: 20px;
+    padding: var(--NormPadding);
     gap: 2rem;
 }
 .Introikoner img{
@@ -105,11 +114,14 @@ font-family: "Fascinate", system-ui;
     object-fit: contain;
 }
 .ProfileCard{
-    background: #fffef8;
+    margin-top: var(--NormPadding);
+    background: white  ;
         border: 3px solid #d9d8c8;
         border-radius: 12px;
         padding: 5px;
-        width: 300px;
+        max-width: 300px;
+        min-width: 300px;
+        max-height: 400px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transform: rotate(5deg);
         text-align: center;
@@ -121,8 +133,6 @@ font-family: "Fascinate", system-ui;
     border: solid 10px white;
     border-bottom: solid 10px white;
 }
-
-
 
 /*Kompetance sektionen */
 
@@ -151,27 +161,30 @@ font-family: "Fascinate", system-ui;
         object-fit: contain;
     }
 
-/* OmMig side */
-.OmMigintro{
-    background: var(--BGPurple);
-    display: flex;
-    justify-content: start;
-    align-items: start;
-     
-}
-
-
-
 /*Flip cards*/
+.Overskrift {
+    font-size: 2.5rem;
+    padding-bottom: var(--MediumPaddingh);
+}
 .portfolioSektion {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    margin: var(--NormPadding);
     padding: 50px;
     background-color: var(--BGGreen);
-    gap: 3rem;
+    padding: 40px;
+    border-radius: 50px;
+}
+.portfolioSektion h2 {
+    color: var(--PrimePurple);
 }
 
+.cardsSektion {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: var(--NormPadding);
+    gap: 1rem;
+    
+}
 
 .flip-card {
     width: 400px;
@@ -214,13 +227,17 @@ font-family: "Fascinate", system-ui;
 .flip-card-front img {
     width: 80%;
     height: 80%;
-    padding: 20px;
+    padding: var(--NormPadding);
     object-fit: cover;
     padding-bottom: 10px
 }
 .flip-card-front h2 {
     color: var(--PrimePurple);
     padding-bottom: 30px;
+}
+.flip-card-front p {
+    font-size: 1.2rem;
+    padding: var(--NormPadding);
 }
 /* Bagsiden */
 .flip-card-bagside {
@@ -232,4 +249,148 @@ font-family: "Fascinate", system-ui;
     align-items: center;
     text-align: start;
     padding: 15px;
+}
+.SeeMere{
+
+    align-items: center;
+    gap: 10px;
+    padding-top: 100px;
+}
+.SeeMere p{
+    font-size: 1.5rem;
+    padding: var(--NormPadding);
+    margin-left: 40px;
+}
+.pointer{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+/*  */
+/**/
+
+
+
+/* OmMig side */
+.OmMigintro{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.lilleBoks{
+    background: var(--BGPurple);
+    border-radius: 30px;
+    padding: 30px;
+    line-height: 2rem;
+}
+
+.FremtidsSection{
+    margin-top: var(--NormPadding);
+}
+
+.planerFremtid{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: var(--NormPadding);
+}
+
+.MusikMedBilleder{
+    display: flex;
+    align-items: center;
+}
+.MusikTekst{
+    background: var(--BGGreen);
+    padding: var(--NormPadding);
+    border-radius: 30px;
+    align-items: center;
+    margin-bottom: var(--NormPadding);
+}
+.OMStjerne{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    padding-right: 50px;
+}
+
+
+
+
+
+
+/* CARD STACK */
+.card-stack {
+    position: relative;
+    min-width: 350px;
+    height: 350px;
+    cursor: pointer;
+    perspective: 1000px;
+    margin-right: 150px;
+    margin-left: var(--BiggerPadding);
+}
+
+/* INDIVIDUELT CARD */
+.photo-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #8B9676;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transform: rotate(var(--rotate, 0deg)) translateY(var(--y, 0px));
+    transition: all 0.5s ease;
+}
+
+.photo-card img {
+    width: 300px;
+   padding-left: 25px;
+   padding-bottom: 10px;
+   padding-top: 25px;
+    object-fit: cover;
+}
+
+.caption {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.Lillecaption{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(171, 171, 171);
+    padding-bottom: 10px;
+}
+
+/* ---------- LAGVIS STACK ---------- */
+.card-stack .photo-card:nth-child(1) {
+    --rotate: 2deg;
+    --y: 0px;
+    z-index: 4;
+}
+
+.card-stack .photo-card:nth-child(2) {
+    --rotate: -3deg;
+    --y: 15px;
+    z-index: 3;
+}
+
+.card-stack .photo-card:nth-child(3) {
+    --rotate: 4deg;
+    --y: 30px;
+    z-index: 2;
+}
+
+.card-stack .photo-card:nth-child(4) {
+    --rotate: -2deg;
+    --y: 45px;
+    z-index: 1;
+}
+
+/* Animation når et kort går bagest */
+.photo-card.moving {
+    transform: translateY(80px) rotate(10deg);
+    opacity: 0;
 }
