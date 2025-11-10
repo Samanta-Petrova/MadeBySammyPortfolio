@@ -10,7 +10,7 @@
   <body>
     <header>
       <nav>
-        <ul class="navConteiner">
+        <ul class="navConteinerUBG">
           <li><a href="Index.html">Forside</a></li>
           <li><a href="./Portfolio.html">Portfolio</a></li>
           <li><a href="./OmMig.html"> Om OmMig</a></li>
@@ -18,5 +18,183 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="portfolioSection">
+        <div class="portfolioSide">
+          <div class="lilleBoks">
+            <h2 class="Overskrift">Portfolio</h2>
+            <p>
+              Velkommen til min portfolio. Her kan du få indblik i mine
+              projekter som multimediedesignstuderende og grafisk designer, hvor
+              jeg arbejder med Ux/Ui - og front-end design.
+            </p>
+          </div>
+          <div class="star">
+            <img src="./Assets/Photos/Stars/ThePointingStar.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="PortfolioTaps">
+        <!-- Tabs -->
+        <div class="tab-container">
+          <button
+            class="tab-button active"
+            onclick="openTab(event, 'webdesign')"
+          >
+            Web design
+          </button>
+          <button class="tab-button" onclick="openTab(event, 'grafisk')">
+            Grafisk Design
+          </button>
+        </div>
+
+        <!-- Webdesign content -->
+        <div id="webdesign" class="portfolioSektion card-grid tab-content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card">
+                <img src="./Assets/Photos/Cases/RSOK.jpg" alt="Case billede" />
+                <h2>
+                  Rold Skov <br />
+                  Orienteringsklub
+                </h2>
+                <p class="Lillecaption">
+                  Kør musen over mig 1<i class="fa-solid fa-chevron-right"></i>
+                </p>
+              </div>
+              <div class="flip-card-bagside">
+                <p>
+                  I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub
+                  (herefter RSOK), som er en aktiv orienteringsløbeklub. Klubben
+                  har en stærk tilknytning til den naturskønne skov og tilbyder
+                  aktiviteter, der kombinerer motion, mental udfordring og
+                  socialt fællesskab.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card">
+                <img
+                  src="./Assets/Photos/Cases/MagiskJul.jpg"
+                  alt="Case billede"
+                />
+                <h2>Magisk jul</h2>
+                <p class="Lillecaption">
+                  Kør musen over mig 2<i class="fa-solid fa-chevron-right"></i>
+                </p>
+              </div>
+              <div class="flip-card-bagside">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat obcaecati perspiciatis possimus. Expedita cum sint
+                  reiciendis, saepe quisquam maiores corporis ipsum maxime
+                  debitis nam, accusantium quibusdam, voluptatum voluptate
+                  possimus perspiciatis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card">
+                <img
+                  src="./Assets/Photos/Cases/MagiskJul.jpg"
+                  alt="Case billede"
+                />
+                <h2>Magisk jul</h2>
+                <p class="Lillecaption">
+                  Kør musen over mig 2<i class="fa-solid fa-chevron-right"></i>
+                </p>
+              </div>
+              <div class="flip-card-bagside">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat obcaecati perspiciatis possimus. Expedita cum sint
+                  reiciendis, saepe quisquam maiores corporis ipsum maxime
+                  debitis nam, accusantium quibusdam, voluptatum voluptate
+                  possimus perspiciatis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card">
+                <img
+                  src="./Assets/Photos/Cases/MagiskJul.jpg"
+                  alt="Case billede"
+                />
+                <h2>Magisk jul</h2>
+                <p class="Lillecaption">
+                  Kør musen over mig 2<i class="fa-solid fa-chevron-right"></i>
+                </p>
+              </div>
+              <div class="flip-card-bagside">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat obcaecati perspiciatis possimus. Expedita cum sint
+                  reiciendis, saepe quisquam maiores corporis ipsum maxime
+                  debitis nam, accusantium quibusdam, voluptatum voluptate
+                  possimus perspiciatis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grafisk Design content -->
+        <div id="grafisk" class="portfolioSektion card-grid tab-content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card">
+                <a href=""></a>
+                <img src="./Assets/Photos/IMG_0068.JPG" alt="Case billede" />
+                <h2>
+                  Rold Skov <br />
+                  Orienteringsklub
+                </h2>
+                <p class="Lillecaption">
+                  Kør musen over mig <i class="fa-solid fa-chevron-right"></i>
+                </p>
+              </div>
+              <div class="flip-card-bagside">
+                <p>
+                  I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub
+                  (herefter RSOK), som er en aktiv orienteringsløbeklub. Klubben
+                  har en stærk tilknytning til den naturskønne skov og tilbyder
+                  aktiviteter, der kombinerer motion, mental udfordring og
+                  socialt fællesskab.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front card">
+                <img src="./Assets/Photos/IMG_0068.JPG" alt="Case billede" />
+                <h2>
+                  Rold Skov <br />
+                  Orienteringsklub
+                </h2>
+                <p class="Lillecaption">
+                  Kør musen over mig <i class="fa-solid fa-chevron-right"></i>
+                </p>
+              </div>
+              <div class="flip-card-bagside">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat obcaecati perspiciatis possimus. Expedita cum sint
+                  reiciendis, saepe quisquam maiores corporis ipsum maxime
+                  debitis nam, accusantium quibusdam, voluptatum voluptate
+                  possimus perspiciatis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
